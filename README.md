@@ -10,7 +10,19 @@ trying to collect some config build `repo` for others to build their own config 
 3. my-own extension 
 4. some code can be used directly for a quick start
 
-## good repo
+
+
+## Usage
+
+### 1. Convolution
+
+|                         my own notes                         |            related github repo             |
+| :----------------------------------------------------------: | :----------------------------------------: |
+| [yacs tutorial](https://github.com/rentainhe/config-builder/blob/master/notes/yacs-notes.md) | [yacs](https://github.com/rbgirshick/yacs) |
+|                   [mmcv_config_tutorial]()                   | [mmcv](https://github.com/open-mmlab/mmcv) |
+
+
+## repo list
 - [yacs](https://github.com/rbgirshick/yacs)
 - [mmcv](https://github.com/open-mmlab/mmcv)
 

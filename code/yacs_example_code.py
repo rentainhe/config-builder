@@ -30,8 +30,9 @@ __C.transforms.normalization.std = [0.5, 0.5, 0.5]
 
 
 def get_cfg_defaults():
-    return __C.clone()
+    return __C.clone()  # use clone() to get a copy one
 
+print(__C.clear())  # None
 
 __C.merge_from_file(r'../test_config_files/config_file.yaml')
 print("merge_from_file example: ")

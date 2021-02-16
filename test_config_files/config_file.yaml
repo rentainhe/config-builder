@@ -1,0 +1,24 @@
+input:
+    size: (32, 32)
+
+model:
+    name: 'resnet18'
+    classes: 100
+
+dataset:
+    name: 'cifar100'
+    dir: './data/cifar100'
+    batch_size: 128
+    eval_batch_size: 64
+
+dataloader:
+    num_workers: 16
+    pin_memory: True
+    drop_last: True
+
+#transforms:
+#    normalization:
+#        mean: [0.5070751592371323, 0.48654887331495095, 0.4409178433670343]
+#        std: [0.2673342858792401, 0.2564384629170883, 0.27615047132568404]
+#
+#debug: True

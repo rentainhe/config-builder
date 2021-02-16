@@ -28,8 +28,31 @@ __C.transforms.normalization = CN()
 __C.transforms.normalization.mean = [0.5, 0.5, 0.5]
 __C.transforms.normalization.std = [0.5, 0.5, 0.5]
 
+
 def get_cfg_defaults():
     return __C.clone()
 
+
 __C.merge_from_file(r'../test_config_files/config_file.yaml')
+print("merge_from_file example: ")
 print(__C)
+print()
+
+opts = ["input.size", (224, 224), "model.name", "vgg"]
+__C.merge_from_list(opts)
+print("merge_from_list example: ")
+print(__C)
+print()
+
+__C.freeze()
+try:
+    __C.model.name = 'vgg'
+except:
+    print("after freeze operation you can not change the value")
+print()
+
+__C.defrost()
+__C.model.name = 'vgg'
+print("after defrost operation you can change the value")
+print("model.name: ")
+print(__C.model.name)

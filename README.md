@@ -14,8 +14,6 @@ trying to collect some config build `repo` for others to build their own config 
 
 ## Usage
 
-### 1. Convolution
-
 |                         my own notes                         |            related github repo             |
 | :----------------------------------------------------------: | :----------------------------------------: |
 | [yacs tutorial](https://github.com/rentainhe/config-builder/blob/master/notes/yacs-notes.md) | [yacs](https://github.com/rbgirshick/yacs) |
